@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hant-zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>雙肩數位</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <nav>
+      <span class="nav-left">
+        <i class="fa-solid fa-angle-left icon-w"></i>
+      </span>
+
+      <span class="nav-right">
+        <span><i class="fa-solid fa-bell icon-w"></i></span>
+        <span><i class="fa-solid fa-right-from-bracket icon-w"></i></span>
+        <span class="user-picture">小明</span>
+      </span>
+    </nav>
+
+    <div id="wapper">
+      <div id="title-bar">
+        <span id="title"></span>
+        <select name="" id="">
+          <option value="">屏東歸來廠</option>
+        </select>
+      </div>
+
+      <div id="calendar-wapper">
+        <div id="calendar">
+          <i class="fa-solid fa-circle-plus"></i>
+          <div id="date-area">
+            <div class="week">星期一</div>
+            <div>
+              <span class="lunar">十一月廿十九</span>
+              <span class="solar">01/01</span>
+            </div>
+          </div>
+        </div>
+
+        <ul id="announcement">
+          <li class="announcement-list">
+            <div>
+              <span>2022/01/01</span>
+              <span>11:00</span>
+            </div>
+            <div>昨晚飼料都有吃完，水色正常</div>
+          </li>
+          <li class="announcement-list">
+            <div><span>2022/01/01</span> <span>09:00</span></div>
+            <div>需要預購聯豐蝦粉，特價只到01/10預定10包</div>
+          </li>
+        </ul>
+      </div>
+
+      <div id="tool-card">
+        <span class="crad">
+          <i class="fa-solid fa-water"></i>
+          <div>養殖監控</div>
+        </span>
+        <span class="crad">
+          <i class="fa-solid fa-water"></i>
+          <div>進水排水</div>
+        </span>
+        <span class="crad">
+          <i class="fa-solid fa-water"></i>
+          <div>養水消毒</div>
+        </span>
+        <span class="crad">
+          <i class="fa-solid fa-water"></i>
+          <div>批次紀錄</div>
+        </span>
+        <span class="crad">
+          <i class="fa-solid fa-water"></i>
+          <div>放苗紀錄</div>
+        </span>
+        <span class="crad">
+          <i class="fa-solid fa-water"></i>
+          <div>餵養紀錄</div>
+        </span>
+        <span class="crad">
+          <i class="fa-solid fa-water"></i>
+          <div>量測記錄</div>
+        </span>
+        <span class="crad">
+          <i class="fa-solid fa-water"></i>
+          <div>收成紀錄</div>
+        </span>
+        <span class="crad">
+          <i class="fa-solid fa-water"></i>
+          <div>包裝紀錄</div>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
