@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    max-width: 350px;
+    margin: 0 auto;
+}
+nav{
+    background-color: #2d7a7f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: block;
+    list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+.test{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#backhome{
+    margin: 5px;
+    z-index: 10;
+    position: fixed;
+    bottom: 10px;
+    background: #8EB9A8;
+    background-color: #3aaca2;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: x-large;
+    color: #FFF;
+}
+.nav-left{
+    margin: 5px;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.nav-right span{
+    margin: 5px;
+    cursor: pointer;
+}
+
+.nav-right span i{
+    font-size: large;
+    margin: 0 3px;
+}
+
+.icon-w{
+    color: #fff;
+}
+.user-picture{
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+.user-picture p{
+    display: inline-block;
+    color:#2d7a7f;
+}
+
+#wapper{
+    padding: 5px;
+    background-color: #e6eaf5;
+}
+
+#wapper > div{
+    margin: 10px;
+}
+
+#title-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+#title-bar select{
+    border-radius: 50px;
+    color: #2d7a7f;
+    border: 0;
+    box-shadow: 1px 1px 2px #00000069;
+    padding: 2px;
+    cursor: pointer;
+}
+
+
+#calendar-wapper{
+    background-color: #222f4e;
+}
+
+#calendar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#calendar .fa-circle-plus{
+    display: inline-block;
+    background-color: #e6e5f1;
+    color: #39aca3;
+    border: 0px;
+    border-radius: 100%;
+    font-size: xx-large;
+    cursor: pointer;
+}
+#calendar #date-area{
+    color: #fefefc;
+    text-align: right;
+}
+#calendar #date-area .solar{
+    font-size: xx-large;
+}
+#announcement{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.announcement-list{
+    padding: 5px 3px;
+    width: calc(100% - 10px);
+    color: #989ba0;
+    background-color: #DEE0EC;
+    margin: 5px;
+    border-radius: 3px;
+}
+#tool-card{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 90px));
+    grid-auto-rows: 90px;
+    grid-gap: 5px;
+}
+#tool-card .crad{
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #9E9E9E;
+    color: #3aaca2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#tool-card .crad:hover{
+    background-color: red;
+    color: #fff;
+}
+#tool-card .crad i{
+    font-size: 35px;
+}
+
+#Monitoring-function-card{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 150px);
+    grid-auto-rows: 100px;
+    grid-gap: 5px;
+}
+#Monitoring-function-card .crad{
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #9E9E9E;
+    color: #3aaca2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    #Monitoring-function-card .crad:last-child{
+        grid-column: 1/-1;
+    }
+}
+
+#Monitoring-function-card .crad:hover{
+    background-color: red;
+    color: #fff;
+}
+#Monitoring-function-card .crad i{
+    font-size: 35px;
+}
+
+
+
+#water-level-card{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 160px;
+    grid-gap: 10px;
+}
+#water-level-card .crad{
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #9E9E9E;
+    color: #3aaca2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#water-level-card .crad.red{
+    background-color: red;
+    color: #fff;
+}
+#water-level-card .crad i{
+    font-size: 35px;
+}
+
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background: #cccccc00;
+    border: 4px solid #ffffff00;
+    box-shadow: 0 0 0 2px #4badde;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .wave {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #4badde;
+    border-radius: 50%;
+  }
+  .wave:before,
+  .wave:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+  }
+
+  .wave:after {
+    border-radius: 40%;
+    background: #ffffff;
+    animation: animate 10s linear infinite;
+  }
+  .crad.red .wave:after {
+    border-radius: 40%;
+    background: red;
+    animation: animate 10s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -75%) rotate(360deg);
+    }
+  }
