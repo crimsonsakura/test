@@ -3,7 +3,7 @@
 }
 body{
     background-color: #000;
-    max-width: 350px;
+    max-width: 400px;
     margin: 0 auto;
 }
 nav{
@@ -79,6 +79,8 @@ ul{
 #wapper{
     padding: 5px;
     background-color: #e6eaf5;
+    height: 100%;
+    min-height: 100vh;
 }
 
 #wapper > div{
@@ -185,10 +187,8 @@ ul{
     cursor: pointer;
 }
 
-@media (max-width: 500px) {
-    #Monitoring-function-card .crad:last-child{
-        grid-column: 1/-1;
-    }
+#Monitoring-function-card .crad:last-child{
+    grid-column: 1/3;
 }
 
 #Monitoring-function-card .crad:hover{
